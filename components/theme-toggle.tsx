@@ -16,13 +16,14 @@ export default function ThemeToggle() {
 
   const resolvedTheme = theme === "system" ? systemTheme : theme;
 
+  if (!mounted) return null;
+
   return (
     <Button
       variant="ghost"
       size="icon"
       type="button"
       onClick={() => {
-        if (!mounted) return;
         setTheme(resolvedTheme === "dark" ? "light" : "dark");
       }}
       aria-label="Toggle theme"
