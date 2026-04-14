@@ -13,12 +13,7 @@ import {
 import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
 
-export default function Login({ post }: { post: { title: string; body: string; userId: number } }) {
-
-
-  console.log('this is a client side component, post:', post)
-  
-
+export default function Login() {
 
   return (
   <div >
