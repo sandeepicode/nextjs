@@ -8,7 +8,7 @@ const PostCard = (post: { id: number; title: string; body: string }) => {
     const [isOpen, setIsOpen] = useState(false);
 
 
-  console.log("post", post);
+  console.log(": Posts in PostCard : ", post);
   return (
     <div>
       <div className="mt-4 flex justify-between gap-2">
